@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-image: url('Background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    opacity: 0.95; /* Transparency effect */
+}
+
+/* Navigation Bar with Gradient */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #A4A5A7, #ffffff); /* Gradient from #A4A5A7 to white */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a42f00; /* Highlight color on hover */
+}
+
+.nav-links a.active {
+    color: #000000; /* Highlight the active link */
+}
+
+/* Main Content (Centered Video and Description) */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Tutorial Description Box */
+.tutorial-description {
+    width: 50%; /* Adjust width to be consistent with the video box */
+    margin-bottom: 20px; /* Add some space below the description box */
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-box {
+    background: linear-gradient(to right, #A4A5A7, #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.tutorial-text {
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Video Image (Centered) */
+.video-container {
+    width: 50%; /* Adjust width to make the video box medium-sized */
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the video box horizontally */
+}
+
+.video-image {
+    width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+/* Mic Icon at Bottom Center (Increased size) */
+.mic-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mic-icon img {
+    width: 70px; /* Increased mic icon size */
+    height: 70px;
+}

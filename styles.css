@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-image: url('Background.jpg'); /* Path to your background image */
+    background-size: cover; /* Make sure the background covers the entire page */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Navigation Bar with Gradient */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #A4A5A7, #ffffff); /* Gradient from #A4A5A7 to white */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #000000; /* Set the text color */
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000000; /* Set the link color */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a42f00; /* Highlight color on hover */
+}
+
+/* Main Content (Centered QR Scanner) */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: #000000; /* Set the text color */
+    margin-bottom: 20px;
+}
+
+/* QR Code Scanner Box with Gradient */
+.qr-scanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right, #A4A5A7, #ffffff); /* Gradient from #A4A5A7 to white */
+    border-radius: 20px; /* Blended corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Positioning the "Scan Here" Text */
+.scan-text {
+    position: absolute;
+    top: 10px; /* Position the text at the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    z-index: 1; /* Ensure text is above the QR code image */
+}
+
+.qr-scanner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Mic Icon at Bottom Center (Increased size) */
+.mic-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mic-icon img {
+    width: 70px; /* Increased mic icon size */
+    height: 70px;
+}
